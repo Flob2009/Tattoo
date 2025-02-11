@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "Tattoo",
+    "slug": "Tattoo",
+    "scheme": "skoapp-prod",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#6A0DAD"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tattoo.app",
+      "infoPlist": {
+        "CFBundleURLTypes": [
+          {
+            "CFBundleURLSchemes": ["skoapp-prod"]
+          }
+        ]
+      }
+    },
+    "android": {
+      "package": "com.tattoo.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "skoapp-prod",
+              "host": "sign-in-callback"
+            }
+          ],
+          "category": ["BROWSABLE", "DEFAULT"]
+        }
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "platforms": ["ios", "android"],
+    "extra": {
+      "eas": {
+        "projectId": "ton-projet-id"
+      }
+    }
+  }
+}
